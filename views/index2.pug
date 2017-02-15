@@ -1,0 +1,32 @@
+extends ./layout.pug
+block contenido
+		h1 Página web con pug
+		p Me llamo #{nombre}
+		-var miArray=["Lista de Mamarrachos","1.Alvaro","2.Palacin"]
+		-for(var i=0;i<miArray.length;i++){
+			p=miArray[i]
+		-}		
+		for a in miArray
+			p= a	
+
+		each a in miArray		
+			p= a
+
+		for a in miArray
+			p="<h3>"+a+"</h3>"
+
+		//algo. esto es un comentario en el lado del cliente
+		//-algo. esto es un comentario en el lado del servidor
+
+		for a in miArray
+			p!="<h3>"+a+"</h3>"
+
+		//<a href="http://www.google.es"> ir a google</a>
+		a(href="http://www.google.es") ir a google
+		br
+		a(href=nombre) ir a mi nombre
+		br
+		p.
+			haz click en #[a(href="http://www.marca.com") este enlace] gracias
+
+		block2 contenido

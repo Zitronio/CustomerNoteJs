@@ -1,0 +1,22 @@
+{
+  "name": "servidor-customer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zitronio",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.2",
+    "pug": "^2.0.0-beta11"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
